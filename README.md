@@ -162,6 +162,5 @@ No known bugs at this time.
 
 Ahmed Belhaj - [Github](https://github.com/Theemiss)
 
-Second part of Airbnb: Joann Vuong
 ## License
 Public Domain. No copy write protection. 
