@@ -1,5 +1,5 @@
 # AirBnB Clone - The Console
-The console is the first segment of the AirBnB project at Holberton School that will collectively cover fundamental concepts of higher level programming. The goal of AirBnB project is to eventually deploy our server a simple copy of the AirBnB Website(HBnB). A command interpreter is created in this segment to manage objects for the AirBnB(HBnB) website.
+This a recreation of some part of Airbnb
 
 <p align="center"><img src="bnb.png" alt="AirBnb  logo"></p>
 
@@ -26,9 +26,14 @@ This project is interpreted/tested on Ubuntu 14.04 LTS using python3 (version 3.
 
 ## Installation
 * Clone this repository: `git clone "https://github.com/alexaorrico/AirBnB_clone.git"`
-* Access AirBnb directory: `cd AirBnB_clone`
-* Run hbnb(interactively): `./console` and enter command
-* Run hbnb(non-interactively): `echo "<command>" | ./console.py`
+* Access AirBnb directory: `cd AirbnbClone`
+* Setup Database using setup_mysql_dev.sql
+* Dump data using dump_data.sql
+* Run the both api and ui using HBNB_MYSQL_USER=hbnb_dev HBNB_MYSQL_PWD=hbnb_dev_pwd HBNB_MYSQL_HOST=localhost HBNB_MYSQL_DB=hbnb_dev_db HBNB_TYPE_STORAGE=db
+*  Start API server using api.py
+* Start UI server using run.py
+* Run tests using HBNB_ENV=test HBNB_MYSQL_USER=hbnb_test HBNB_MYSQL_PWD=hbnb_test_pwd HBNB_MYSQL_HOST=localhost HBNB_MYSQL_DB=hbnb_test_db HBNB_TYPE_STORAGE=db python3 -m unittest discover tests
+
 
 ## File Descriptions
 [console.py](console.py) - the console contains the entry point of the command interpreter. 
