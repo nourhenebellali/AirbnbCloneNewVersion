@@ -18,10 +18,8 @@ def close_db(error):
     """ Remove the current SQLAlchemy Session """
     storage.close()
 
-
-@app.route('/101-hbnb', strict_slashes=False)
-def hbnb():
-    """ HBNB is alive! """
+@app.route('/', strict_slashes=False)
+def user():
     states = storage.all(State).values()
     states = sorted(states, key=lambda k: k.name)
     st_ct = []
@@ -41,5 +39,39 @@ def hbnb():
                            places=places,
                            cache_id=str(uuid4()))
 
+@app.route('/admin/signin', strict_slashes=False)
+def signin():
+    """ HBNB is alive! """
+    states = storage.all(State).values()
+    states = sorted(states, key=lambda k: k.name)
+    st_ct = []
+
+    for state in states:
+        st_ct.append([state, sorted(state.cities, key=lambda k: k.name)])
+
+    amenities = storage.all(Amenity).values()
+    amenities = sorted(amenities, key=lambda k: k.name)
+
+    places = storage.all(Place).values()
+    places = sorted(places, key=lambda k: k.name)
+
+    return render_template('signin.html',
+                           cache_id=str(uuid4()))
 
 
+
+@app.route('/admin/', strict_slashes=False)
+def index():
+    """ HBNB is alive! """
+
+
+    return render_template('index.html',
+                           cache_id=str(uuid4()))
+
+@app.route('/admin/signup', strict_slashes=False)
+def signup():
+    """ HBNB is alive! """
+
+
+    return render_template('signup.html',
+                           cache_id=str(uuid4()))

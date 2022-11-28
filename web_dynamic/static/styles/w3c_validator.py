@@ -15,13 +15,13 @@ Usage:
 Simple file:
 
 ```
-./w3c_validator.py index.html
+./w3c_validator.py {{ url_for('index') }}
 ```
 
 Multiple files:
 
 ```
-./w3c_validator.py index.html header.html styles/common.css
+./w3c_validator.py {{ url_for('index') }} header.html styles/common.css
 ```
 
 All errors are printed in `STDERR`
