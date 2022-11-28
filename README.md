@@ -22,10 +22,10 @@ This a recreation of some part of Airbnb
 * [License](#license)
 
 ## Environment
-This project is interpreted/tested on Ubuntu 14.04 LTS using python3 (version 3.4.3)
+This project is interpreted/tested on Ubuntu 20.04 LTS using python3 (version 3.8.10)
 
 ## Installation
-* Clone this repository: `git clone "https://github.com/alexaorrico/AirBnB_clone.git"`
+* Clone this repository: `git clone "https://github.com/alexaorrico/AirbnbClone.git"`
 * Access AirBnb directory: `cd AirbnbClone`
 * Setup Database using setup_mysql_dev.sql
 * Dump data using dump_data.sql
