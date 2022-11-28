@@ -1,4 +1,4 @@
-# AirBnB Clone - The Console
+# AirBnB Clone
 This a recreation of some part of Airbnb
 
 <p align="center"><img src="bnb.png" alt="AirBnb  logo"></p>
