@@ -138,6 +138,9 @@ TestBaseModel class:
 ## Examples of use
 <p align="center"><img src="62fbb2d674fca4a843458e61cf3b05ee9f68ad04.jpg" alt="final  airbnb"></p>
 
+<p align="center"><img src="signup.png" alt="signup"></p>
+<p align="center"><img src="signin.png" alt="signin"></p>
+
 ```
 vagrantAirBnB_clone$./console.py
 (hbnb) help
