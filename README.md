@@ -1,6 +1,9 @@
 # AirBnB Clone
 This a recreation of some part of Airbnb
 
+## Description
+This is a project to recreate some part of Airbnb. (Mostly Admin Side) only one View with filter for users to browse the available houses It is a console that allows you to create, update, delete and show objects. For now it is only possible to create and show objects , but the other functions will be added soon.(authontication ...)
+
 <p align="center"><img src="bnb.png" alt="AirBnb  logo"></p>
 
 
@@ -10,6 +13,10 @@ This a recreation of some part of Airbnb
 * Do operations on objects (count, compute stats, etc...)
 * Update attributes of an object
 * Destroy an object
+# Missing Features
+* Signup(authentication)
+* Protrction of routes
+* Frontend Backend Integration For The Admin Dashboard
 
 ## Table of Content
 * [Environment](#environment)
@@ -23,6 +30,7 @@ This a recreation of some part of Airbnb
 
 ## Environment
 This project is interpreted/tested on Ubuntu 20.04 LTS using python3 (version 3.8.10)
+
 
 ## Installation
 * Clone this repository: `git clone "https://github.com/alexaorrico/AirbnbClone.git"`
