@@ -5,7 +5,7 @@ import models
 from models.base_model import BaseModel, Base
 from os import getenv
 import sqlalchemy
-from sqlalchemy import Column, String
+from sqlalchemy import Column, String, BOOLEAN
 from sqlalchemy.orm import relationship
 from hashlib import md5
 
@@ -15,6 +15,7 @@ class User(BaseModel, Base):
     if models.storage_t == 'db':
         __tablename__ = 'users'
         email = Column(String(128), nullable=False)
+        isSuperUser = Column(BOOLEAN, nullable=False, default=False)
         password = Column(String(128), nullable=False)
         first_name = Column(String(128), nullable=True)
         last_name = Column(String(128), nullable=True)
@@ -25,6 +26,7 @@ class User(BaseModel, Base):
         password = ""
         first_name = ""
         last_name = ""
+        isSuperUser = False
 
     def __init__(self, *args, **kwargs):
         """initializes user"""

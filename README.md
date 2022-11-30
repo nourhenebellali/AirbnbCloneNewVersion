@@ -1,6 +1,8 @@
 # AirBnB Clone
 in this part of project we will add some new feature to include superusers which happen to be the one managing our website we will need to update some of the models as well our routes
 
+
+
 ## Description
 This is a project to recreate some part of Airbnb. (Mostly Admin Side) only one View with filter for users to browse the available houses It is a console that allows you to create, update, delete and show objects. For now it is only possible to create and show objects , but the other functions will be added soon.(authontication ...)
 
@@ -172,8 +174,7 @@ EOF  all  create  destroy  help  quit  show  update
 ```
 
 ## Bugs
-No known bugs at this time. 
-
+* After adding admin privledges, the user can't sign out. The user can still sign in and sign up, but the sign out button doesn't work. all users routes and tests are failing
 ## Authors
 
 Ahmed Belhaj - [Github](https://github.com/Theemiss)
