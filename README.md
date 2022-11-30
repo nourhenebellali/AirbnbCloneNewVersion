@@ -1,5 +1,5 @@
 # AirBnB Clone
-This a recreation of some part of Airbnb
+in this part of project we will add some new feature to include superusers which happen to be the one managing our website we will need to update some of the models as well our routes
 
 ## Description
 This is a project to recreate some part of Airbnb. (Mostly Admin Side) only one View with filter for users to browse the available houses It is a console that allows you to create, update, delete and show objects. For now it is only possible to create and show objects , but the other functions will be added soon.(authontication ...)
