@@ -3,13 +3,15 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Airbnb Admin - Bootstrap 5 Admin Template</title>
+    <title>Airbnb Admin - </title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
     <meta content="" name="description">
 
     <!-- Favicon -->
     <link href="../static/img/favicon.ico" rel="icon">
+    <SCRIPT src="https://code.jquery.com/jquery-3.2.1.min.js"></SCRIPT>
+
 
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -54,11 +56,12 @@
                             <h3>Sign In</h3>
                         </div>
                         <div class="form-floating mb-3">
-                            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-                            <label for="floatingInput">Email address</label>
+                            <form class="loginForm" id="loginForm">
+                            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com" class="input">
+                            <label for="floatingInput" >Email address</label>
                         </div>
                         <div class="form-floating mb-4">
-                            <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                            <input type="password" class="form-control" id="floatingPassword" placeholder="Password" class="input">
                             <label for="floatingPassword">Password</label>
                         </div>
                         <div class="d-flex align-items-center justify-content-between mb-4">
@@ -70,6 +73,8 @@
                         </div>
                         <button type="submit" class="btn btn-primary py-3 w-100 mb-4">Sign In</button>
                         <p class="text-center mb-0">Don't have an Account? <a href="{{ url_for("signup") }}">Sign Up</a></p>
+                    
+                    </form>
                     </div>
                 </div>
             </div>
@@ -84,10 +89,11 @@
     <script src="../static/lib/easing/easing.min.js"></script>
     <script src="../static/lib/waypoints/waypoints.min.js"></script>
     <script src="../static/lib/owlcarousel/owl.carousel.min.js"></script>
-    <script src="../static/lib/tempusdominus/js/moment.min.js></script>
+    <script src="../static/lib/tempusdominus/js/moment.min.js"></script>
     <script src="../static/lib/tempusdominus/js/moment-timezone.min.js"></script>
     <script src="../static/lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
-
+    <script src="../static/scripts/admin.js?{{ cache_id }}"></script>
+    <script src="../static/scripts/app.js?{{ cache_id }}"></script>
     <!-- Template Javascript -->
     <script src="../static/js/main.js"></script>
 </body>

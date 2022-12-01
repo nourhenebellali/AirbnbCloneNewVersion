@@ -1,4 +1,4 @@
-  =>  Template Name    : Airbnb AdminAdminAdminAdminAdmi Admin - Bootstrap 5 Admin Template
+  =>  Template Name    : Airbnb AdminAdminAdminAdminAdmi Admin - 
 
   =>  Template Link    : https://htmlcodex.com/bootstrap-5-admin-template
 

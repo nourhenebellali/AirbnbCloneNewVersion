@@ -12,7 +12,7 @@ def login():
     """
     Login to the admin panel
     """
-    return jsonify({"message": "Login to the admin panel"})
+    return jsonify({"message": "OK"})   
 
 
 @app_views.route('/admin/signup', methods=['GET'], strict_slashes=False)

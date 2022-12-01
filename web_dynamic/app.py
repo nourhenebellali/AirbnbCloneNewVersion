@@ -63,8 +63,10 @@ def signin():
 @app.route('/admin/', strict_slashes=False)
 def index():
     """ HBNB is alive! """
-
-
+    auth = False
+    if not auth:
+        return render_template('signin.html',
+                               cache_id=str(uuid4()))
     return render_template('index.html',
                            cache_id=str(uuid4()))
 
