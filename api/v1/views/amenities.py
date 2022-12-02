@@ -1,5 +1,6 @@
 #!/usr/bin/python3
 """ objects that handles all default RestFul API actions for Amenities"""
+from flask_jwt_extended import jwt_required
 from models.amenity import Amenity
 from models import storage
 from api.v1.views import app_views
@@ -9,6 +10,7 @@ from flasgger.utils import swag_from
 
 @app_views.route('/amenities', methods=['GET'], strict_slashes=False)
 @swag_from('documentation/amenity/all_amenities.yml')
+@jwt_required()
 def get_amenities():
     """
     Retrieves a list of all amenities
@@ -23,6 +25,7 @@ def get_amenities():
 @app_views.route('/amenities/<amenity_id>/', methods=['GET'],
                  strict_slashes=False)
 @swag_from('documentation/amenity/get_amenity.yml', methods=['GET'])
+@jwt_required()
 def get_amenity(amenity_id):
     """ Retrieves an amenity """
     amenity = storage.get(Amenity, amenity_id)
@@ -35,6 +38,7 @@ def get_amenity(amenity_id):
 @app_views.route('/amenities/<amenity_id>', methods=['DELETE'],
                  strict_slashes=False)
 @swag_from('documentation/amenity/delete_amenity.yml', methods=['DELETE'])
+@jwt_required()
 def delete_amenity(amenity_id):
     """
     Deletes an amenity  Object
@@ -53,6 +57,7 @@ def delete_amenity(amenity_id):
 
 @app_views.route('/amenities', methods=['POST'], strict_slashes=False)
 @swag_from('documentation/amenity/post_amenity.yml', methods=['POST'])
+@jwt_required()
 def post_amenity():
     """
     Creates an amenity
@@ -72,6 +77,7 @@ def post_amenity():
 @app_views.route('/amenities/<amenity_id>', methods=['PUT'],
                  strict_slashes=False)
 @swag_from('documentation/amenity/put_amenity.yml', methods=['PUT'])
+@jwt_required()
 def put_amenity(amenity_id):
     """
     Updates an amenity
